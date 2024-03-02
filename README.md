@@ -1,2 +1,11 @@
-# Public-Individual-Res-Packs-for-Minecraft-Bedrock-Server
-Tutorial für Minecraft Bedrock. Serverseitige Res-Pack Schnittstelle mit Userseitigem Autoselektor. (funktioniert auch bei Relams)
+# Über dieses Tutorial:
+
+# Tutorial für Server: (und Relams)
+
+# Tutorial für User:
+
+# Persönliche Gedanke
+Dieses Tutorial endstand aus einer Idee die ich persönlich verdammt cool Finde.
+Ich hoffe das sich diese Etabliert und für einen Großraum an Anwendung findet.
+
+Hoffe es hat euch gefallen.

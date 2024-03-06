@@ -1,5 +1,5 @@
 # Funktionsweise:
-Dieses System Funktioniert indem der die UUID's und der Ordnername das Subpacks übereinstimmen.
+Dieses System Funktioniert indem der die UUID's, die Version und der Ordnername das Subpacks übereinstimmen.
 
 Das Geheimnis liegt in der world_resource_packs.json Datei im Welt Ordner:
 
@@ -20,7 +20,7 @@ Das sind sie Werte auf die Minecraft Achtet. Wenn der User schon ein Pack hat wa
 		"format_version": 2,
 		"header": {
 			"description": "Hier kann eine Beschreibung hin",
-			"name": "Hier kein ein Name hin",
+			"name": "Hier kann ein Name hin",
 			"uuid": "11111111-1111-1111-1111-111111111111",
 			"version": [ 1,0,0 ],
 			"min_engine_version": [ 1,20,0 ]
@@ -41,6 +41,8 @@ Das sind sie Werte auf die Minecraft Achtet. Wenn der User schon ein Pack hat wa
 			}
 		]
 	}
+
+
 # Tutorial für User:
 
 # Persönliche Gedanke

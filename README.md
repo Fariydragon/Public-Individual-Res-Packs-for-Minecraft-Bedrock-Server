@@ -1,7 +1,5 @@
 # Funktionsweise:
-Dieses System Funktioniert indem der die UUID's, die Version und der Ordnername das Subpacks übereinstimmen.
-
-Das Geheimnis liegt in der world_resource_packs.json Datei im Welt Ordner:
+Dieses System funktioniert, indem die UUIDs, die Version und der Ordnername des Subpacks übereinstimmen. Das Herzstück liegt in der world_resource_packs.json Datei im Welt-Ordner.
 
 	[
 		{
@@ -10,11 +8,13 @@ Das Geheimnis liegt in der world_resource_packs.json Datei im Welt Ordner:
 			"version" : [ 1, 0, 0 ]
 		}
 	]
-Das sind sie Werte auf die Minecraft Achtet. Wenn der User schon ein Pack hat was diese Vorraussetzungen erfüllt, würd Minecraft diese Laden, statt dieses Res-Pack Herrunterladen zu wollen.
+Dies sind die Werte, auf die Minecraft achtet. Wenn der Benutzer bereits ein Pack hat, das diese Anforderungen erfüllt, lädt Minecraft dieses, anstatt dieses Ressourcen-Pack herunterladen zu wollen.
 
  Anmerkungen:
-* Ich habe mich für diese UUID Werte endschieden weil sie einfacher zu Merken sind als eine zufällig generierte UUID.
-# Tutorial für Server: (und Relams)
+* Die Wahl der UUID-Werte basiert auf ihrer leichteren Merkfähigkeit im Vergleich zu zufällig generierten UUIDs.
+* Der Subpack-Name setzt sich aus einer Kombination von IP und Servername zusammen, um Doppelungen im System zu vermeiden.
+* Die IP kann durch "realm" ersetzt werden, wenn es sich um ein Realm handelt.
+# Tutorial für Server und Realms:
 
 	{
 		"format_version": 2,
@@ -42,15 +42,15 @@ Das sind sie Werte auf die Minecraft Achtet. Wenn der User schon ein Pack hat wa
 		]
 	}
 
-
-# Tutorial für User:
+Hier gibt es nicht viel zu sagen. Der folder_name muss individuell gestaltet werden, ansonsten gelten die Minecraft Ressourcenpack-Regeln.
+# Tutorial für Benutzer:
 
 	{
 		"format_version": 2,
-  	"header": {
-    	"description": "Hier kann eine Beschreibung hin",
-    	"name": "Hier kann ein Name hin",
-    	"uuid": "11111111-1111-1111-1111-111111111111",
+		"header": {
+			"description": "Hier kann eine Beschreibung hin",
+			"name": "Hier kann ein Name hin",
+			"uuid": "11111111-1111-1111-1111-111111111111",
 			"version": [ 1,0,0 ],
 			"min_engine_version": [ 1,20,0 ]
 		},
@@ -75,11 +75,9 @@ Das sind sie Werte auf die Minecraft Achtet. Wenn der User schon ein Pack hat wa
 			}
 		]
 	}
- 
-# Persönliche Gedanke
-Dieses Tutorial endstand aus einer Idee die ich persönlich verdammt cool Finde.
-Ich hoffe das sich diese Etabliert und für einen Großraum an Anwendung findet.
 
-Ich wollte eigendlich 0.0.0.0:Server verweden, aber das Dateisystem Akzeptiert ':' nicht im Namen.
+Beachte, dass dein Standard-Subpack ganz unten steht. Dies hat sich für mich als angenehm erwiesen, könnte jedoch je nach Situation variieren. Der folder_name sollte auf den Server-folder_name angepasst werden.
+# Persönliche Gedanken:
+Dieses Tutorial entstand aus einer Idee, die ich persönlich für sehr cool halte. Ich hoffe, dass sich dieses System etabliert und für eine Vielzahl von Anwendungen nützlich wird. Ursprünglich wollte ich "0.0.0.0:Server" verwenden, jedoch akzeptiert das Dateisystem ":" nicht im Namen.
 
-Hoffe es hat euch gefallen.
+Feedback, Vorschläge und Verbesserungen sind immer willkommen. Dies ist mein erstes Tutorial und ich bin dankbar für jegliche Unterstützung.
